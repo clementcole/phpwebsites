@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Impressive CSS3 Product Showcase | Tutorialzine Demo</title>
+
+        <!-- Google Webfonts and our stylesheet -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow|Open+Sans:300" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+    <body img="css/cloud3.jpg">
+
+        <div id="impress" class="impress-not-supported">
+
+            <!-- The Slides Will Go Here -->
+		    <div id="intro" class="step" data-x="0" data-y="0">
+		        <h2>Description Of Photo</h2>
+		        <p>Description of photo</p>
+		        <img src="img/pix-1.jpg" width="620" height="340" alt="Galaxy Nexus" />
+		    </div>
+		    
+		    <div id="simplicity" class="step" data-x="1100" data-y="1200" data-scale="1.8" data-rotate="190">
+		        <h2>Description Of Photo</h2>
+		        <p>Description</p>
+		        <img src="img/pix-2.jpg" width="620" height="340" alt="Galaxy Nexus" />
+		    </div>
+		    
+		    <div id="connect" class="step" data-x="-300" data-y="600" data-scale="0.2" data-rotate="270">
+		        <h2>Description  &amp; Description</h2>
+		        <p>Description Of Photo</p>
+		        <img src="img/pix-5.jpg" width="620" height="340" alt="Galaxy Nexus" />
+		    </div>
+		    
+		    <div id="upload" class="step" data-x="-200" data-y="1500" data-rotate="180">
+		        <h2>Description</h2>
+		        <p>Description</p>
+		        <img src="img/pix-6.jpg" width="620" height="340" alt="Galaxy Nexus" />
+		    </div>
+		    
+		    <div id="music" class="step" data-x="-1200" data-y="1000" data-scale="0.8" data-rotate="270">
+		        <h2>Description</h2>
+		        <p>Description</p>
+		        <img src="img/cloud.jpg" width="620" height="340" alt="Galaxy Nexus" />
+		    </div>
+
+        </div>
+	<div class="stick-to-left">
+        <a href="#" id="arrowLeft" class="arrow"><font size="100" color="#787878" face="Ariel">&lt;</font></a>
+		<style>
+   		 .stick-to-left {
+			border-top: 500px solid transparent;
+    			border-bottom: -500px solid transparent;
+       		 width: 200px;
+       		 float: left;
+		 display: block;
+   		 }
+		</style>
+	
+	</div>
+	<div class="stick-to-right">
+        <a href="#" id="arrowRight" class="arrow"><font size="100" color="#787878">&gt;</font></a>
+		<style>
+			.stick-to-right{
+				border-top: 500px solid transparent;
+ 	                         border-bottom: -500px solid transparent;
+				width: -200px;
+				float: right;
+			}
+		</style>
+	</div>
+        <!-- JavaScript includes -->
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="js/impress.js"></script>
+        <script src="js/script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,332 @@
+*{
+	/* Universal reset: */
+	margin:0;
+	padding:0;
+}
+
+header,footer,
+article,section,
+hgroup,nav,
+figure{
+	/* Giving a display value to the HTML5 rendered elements: */
+	display:block;
+	opacity: 1;
+	}
+
+body{
+	/* Setting the default text color, size, page background and a font stack: */
+	font-size:0.825em;
+	color:#FF6F00;
+	/*background-color:#rgba(255,255,255,0.3);*/
+	font-family:Arial, Helvetica, sans-serif;
+	background: url(sunset.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	opacity: 1;
+}
+
+/* Hyperlink Styles: */
+
+a, a:visited {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+
+}
+
+a img{
+	border:none;
+}
+
+/* Headings: */
+
+h1,h2,h3{
+	font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	text-shadow:0 1px 1px black;
+}
+
+h1{
+	/* The logo text */
+	font-size:3.5em;
+	padding:0.5em 0 0;
+	text-transform:uppercase;
+}
+
+h3{
+	/* The slogan text */
+	font-family:forte,"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	font-size:2em;
+	font-weight:normal;
+	margin:0 0 1em;
+}
+
+
+h2{
+	font-size:2.2em;
+	font-weight:normal;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+}
+
+p{
+	line-height:1.5em;
+	padding-bottom:1em;
+}
+
+.line{
+	/* The dividing line: */
+	height:1px;
+	background-color:#0000CD;
+	border-bottom:1px solid #416371;
+	margin:1em 0;
+	overflow:hidden;
+}
+
+article .line{
+	/* The dividing line inside of the article is darker: */
+	background-color:#15242a;
+	border-bottom-color:#204656;
+	margin:1.3em 0;
+}
+
+footer .line{
+	margin:2em 0;
+}
+
+nav{
+	background:url(img/gradient_light.jpg) repeat-x 50% 50% #f8f8f8;
+	padding:0 5px;
+	position:absolute;
+	right:0;
+	top:4em;
+	
+	border:1px solid #FCFCFC;
+
+	-moz-box-shadow:0 1px 1px #333333;
+	-webkit-box-shadow:0 1px 1px #333333;
+	/*box-shadow:0 1px 1px #333333;*/
+	color: rgba(0,0,0,0.6);
+	text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+}
+
+/* The clearfix hack to clear the floats: */
+
+.clear:before{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	opacity: 1;
+}
+
+/* The navigation styling: */
+
+nav ul li{
+	display:block;
+}
+
+nav ul li a,
+/* REVISIT THIS CODE JUST TESTING OTHER CODES*/
+/*nav ul li a:visited{
+	color:#ffffff;
+	display:block;
+	float:left;
+	font-size:"Lucida Sans Typewriter","Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+	font-weight:bold;
+	margin:0;
+	padding:0;
+	text-shadow:0 1px 1px white;
+	text-transform:uppercase;
+}
+
+nav ul li a:hover{
+	text-decoration:none;
+	background-color:#f0f0f0;
+}*/
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+.clear, .clear ul, .clear ul li, .clear ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.clear {
+  width: auto;
+  font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+  color: #ffffff;
+}
+.clear.align-right ul li {
+  float: right;
+  border-right: 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.22);
+}
+.clear.align-right ul li a {
+  border-right: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+.clear ul {
+  background: #222222;
+  /* Old browsers */
+  background: -moz-linear-gradient(bottom, #000000 0%, #222222 50%, #3c3c3c 51%, #393939 78%, #888888 100%);
+  background: -webkit-linear-gradient(bottom, #000000 0%, #222222 50%, #3c3c3c 51%, #393939 78%, #888888 100%);
+  background: -o-linear-gradient(bottom, #000000 0%, #222222 50%, #3c3c3c 51%, #393939 78%, #888888 100%);
+  background: -ms-linear-gradient(bottom, #000000 0%, #222222 50%, #3c3c3c 51%, #393939 78%, #888888 100%);
+  background: linear-gradient(to top, #000000 0%, #222222 50%, #3c3c3c 51%, #393939 78%, #888888 100%);
+}
+.clear:after, .clear ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clear ul li {
+  float: left;
+  display: block;
+  border-right: 1px solid rgba(0, 0, 0, 0.22);
+  z-index: 1;
+}
+.clear ul li::after {
+  content: "";
+  width: 100%;
+  height: 8px;
+  position: absolute;
+  border-top-left-radius: 50% 4px;
+  border-top-right-radius: 50% 4px;
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #222222 61%, #222222 100%);
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #222222 61%, #222222 100%);
+  background: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #222222 61%, #222222 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #222222 61%, #222222 100%);
+  background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 2;
+  bottom: 10px;
+}
+.clear ul li a {
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 3;
+}
+.clear ul li a:hover, .clear ul li.active a {
+  color: #ffffff;
+}
+.clear ul li:hover, .clear ul li.active {
+  background: #1275ae;
+  /* Old browsers */
+  background: -moz-linear-gradient(bottom, #0b4669 0%, #1275ae 50%, #1794dc 51%, #1691d8 78%, #98d2f4 100%);
+  background: -webkit-linear-gradient(bottom, #0b4669 0%, #1275ae 50%, #1794dc 51%, #1691d8 78%, #98d2f4 100%);
+  background: -o-linear-gradient(bottom, #0b4669 0%, #1275ae 50%, #1794dc 51%, #1691d8 78%, #98d2f4 100%);
+  background: -ms-linear-gradient(bottom, #0b4669 0%, #1275ae 50%, #1794dc 51%, #1691d8 78%, #98d2f4 100%);
+  background: linear-gradient(to top, #0b4669 0%, #1275ae 50%, #1794dc 51%, #1691d8 78%, #98d2f4 100%);
+}
+.clear ul li:hover::after, .clear ul li.active::after {
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #1275ae 61%, #1275ae 100%);
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #1275ae 61%, #1275ae 100%);
+  background: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #1275ae 61%, #1275ae 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #1275ae 61%, #1275ae 100%);
+  background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+nav, article, nav ul li a,figure{
+	/* Applying CSS3 rounded corners: */
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:10px;
+}
+
+
+/* Article styles: */
+
+#page{
+	width:960px;
+	margin:0 auto;
+	position:relative;
+}
+
+article{
+	background-color:#0000CD;
+	margin:3em 0;
+	padding:20px;
+	opacity: 1;
+	text-shadow:0 2px 0 black;
+}
+
+figure{
+    border:3px solid #142830;
+    float:right;
+    height:300px;
+    margin-left:15px;
+    overflow:hidden;
+    width:500px;
+}
+
+figure:hover{
+    -moz-box-shadow:0 0 2px #4D7788;
+    -webkit-box-shadow:0 0 2px #4D7788;
+    box-shadow:0 0 2px #4D7788;
+}
+
+figure img{
+    margin-left:-60px;
+}
+
+
+/*footer */
+
+footer{
+	margin-bottom:30px;
+	text-align:center;
+	font-size:0.825em;
+}
+
+
+footer p{
+	margin-bottom:-2.5em;
+	position:relative;
+}
+
+footer a,footer a:visited{
+	color:#cccccc;
+	background-color:#0000CD;
+	display:block;
+	padding:2px 4px;
+	z-index:100;
+	position:relative;
+	opacity: 0.7;
+}
+
+footer a:hover{
+	text-decoration:none;
+	background-color:#0000CD;
+}
+
+footer a.by{
+	float:left;
+
+}
+
+footer a.up{
+	float:right;
+}
+
+
